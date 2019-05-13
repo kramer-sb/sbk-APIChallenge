@@ -1,6 +1,6 @@
 {
   "projects": {
     "default": "sbk-efa-apichallenge",
-    "api-project": "sbk-efa-apichallenge"
+    "api-challenge": "sbk-efa-apichallenge"
   }
 }
