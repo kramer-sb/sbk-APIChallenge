@@ -19,11 +19,14 @@ function fetchResults(e) {
     .then(data => data.json())
     .then(data => { 
       displayResults(data.articles)
-      });
-    }    
+    });
+  }    
+ 
 function displayResults(json){
   console.log(json[0]);
-  for(i = 0; i < json.length; i++){
+  while (newsItems.firstChild) {
+  newsItems.removeChild(newsItems.firstChild);
+  }  for(i = 0; i < json.length; i++){
   let title = json[i].title;
   let listItem = document.createElement('li');
   listItem.innerText = title;
