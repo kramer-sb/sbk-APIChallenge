@@ -77,7 +77,49 @@ button {
     padding: 10px;
     font-size: 14px;
 }
+/* Typewriter stuff */
 
+.typewriter h3 {
+    font-family: monospace; /* Web-safe typewriter-like font */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 251, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0px auto; /* Gives that scrolling effect as the typing happens */
+    text-align: center;
+    animation: 
+      typing 8s steps(33, end),
+      blinking-cursor 5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0}
+    to { width: 100% }
+  }
+/*   
+  /* The typewriter cursor effect */
+  @keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    25% { border-color: rgb(199, 198, 190); }
+  }
+
+  @media all and (max-width: 980px) {
+    .typewriter h3 {
+      font-size: 15px;
+    }
+  }
+  
+  @media all and (max-width: 882px) {
+    .typewriter h3 {
+      font-size: 12px;
+    }
+  }
+
+  @media all and (max-width: 783px) {
+    .typewriter h3 {
+      font-size: 11px;
+    }
+  }
 
 /* media stuff */
 
